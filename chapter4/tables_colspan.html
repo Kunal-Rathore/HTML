@@ -1,0 +1,106 @@
+<!-- table uses thead tbody -->
+<!-- thead contains the row using tr and th -->
+<!-- tbody contains the col using tr and td for each row -->
+
+<!-- We can use colspan for using the complete row through one td -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background-color: #ff6347;
+            /* Tomato color */
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+            /* Light gray for even rows */
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+            /* Light gray on hover */
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tables</h1>
+
+    <table bgcolor="red">
+        <!-- head of the table  -->
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>Sallary</th>
+                <th>role</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>kunal</td>
+                <td>100</dh>
+                <td>Ceo</td>
+            </tr>
+            <tr>
+                <td>adi</td>
+                <td>1000</th>
+                <td>Web developer</th>
+            </tr>
+            <tr>
+                <td>Atul</th>
+                <td>1000</th>
+                <td>Software Engineer</th>
+            </tr>
+
+            <tr>
+
+                <td colspan="3" style="text-align: center">Thank you</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+
+</body>
+
+</html>
