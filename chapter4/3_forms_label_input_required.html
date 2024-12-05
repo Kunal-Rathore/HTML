@@ -1,0 +1,118 @@
+<!-- 
+
+1st - Form action to store record
+2nd - label 
+3rd - input -> id (same as the for ) -> type (can be email,tel,text) -> placeholder -> required
+4th - button tag -> submit
+5th - password type 
+6th - date type
+7th - select input (option should be bw the select tag)
+8th - radio button (for selecting only one option)
+9th - check box
+10th - textarea (a tag replacing input tag dimension can be resize at runtime) 
+this all should be bw form tag
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in Html</title>
+    <style></style>
+
+</head>
+
+<body>
+
+    <form action="/submit.php">
+        <!-- Name -->
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Name">
+        </div>
+        <!-- Phone -->
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Enter Phone Number">
+        </div>
+
+        <!-- Enter DOB -->
+
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" placeholder="Enter dob" required>
+
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter valid email" required>
+        </div>
+        <!-- Last Name -->
+        <div>
+            <label for="surname">Last Name</label>
+            <input id="surname" type="text" placeholder="Enter last name" required>
+        </div>
+
+
+        <!-- Password -->
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter password" required>
+
+
+        <!-- select option -->
+        <div>
+            <label for="gender">gender</label>
+            <select name="gender" id="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+        </div>
+
+        <!-- Radion button -->
+        <div>
+            <p>Subscription Plan</p>
+
+            <label for="basic">Basic</label>
+            <input id="basic" type="radio" name="Subscription">
+
+            <label for="premium">premium</label>
+            <input id="premium" type="radio" name="Subscription">
+
+            <label for="vip">vip</label>
+            <input id="vip" type="radio" name="Subscription">
+
+        </div>
+
+        <!-- Check box -->
+
+        <div>
+            <label for="check">I agree to your tems</label>
+            <input id="check" type="checkbox" required>
+        </div>
+
+
+        <!-- Text area for comments -->
+
+        <div>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter comments" rows="4">Text goes here</textarea>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
