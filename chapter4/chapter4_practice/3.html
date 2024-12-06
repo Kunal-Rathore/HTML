@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for Travel website</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+
+<body>
+
+    <h1>Travel form</h1>
+
+    <form action="/store.php">
+
+        <div>
+            <label for="name">Name- </label>
+            <input id="name" type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div>
+            <label for="email">Email- </label>
+            <input type="email" id="email" required placeholder="Enter email">
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected>Choose gender</option>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="contact">Contact- </label>
+            <input type="phone" id="contact" placeholder="Enter contact" required>
+        </div>
+
+
+        <div>
+            <label for="traveldate">Travel date</label>
+            <input type="date" id="traveldate" placeholder="enter travel date" required>
+        </div>
+
+        <div>
+            <label for="terms">You accept the terms and conditions of the travel agency</label>
+            <input type="checkbox" name="" id="terms" required>
+        </div>
+
+
+        <div>
+            <b>Your review about the website</b>
+            <label for="good">Good</label>
+            <input type="radio" name="review" id="good" required>
+            <label for="very good">Very Good</label>
+            <input type="radio" id="very good" name="review">
+        </div>
+
+        <div>
+
+            <label for="Suggestion">Suggestion</label>
+            <textarea name="comment" id="Suggestion"></textarea>
+
+        </div>
+
+        <div>
+            <label for="submit"></label>
+            <input type="submit" id="submit">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
